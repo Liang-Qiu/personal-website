@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="The online writing of Alex Payne" name="description">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bulma/0.6.0/css/bulma.min.css" type="text/css">
+  <link rel="stylesheet" href="/css/screen.css" type="text/css">
+  <link rel="alternate" type="application/atom+xml" title="Alex Payne" href="/atom.xml">
+  <link rel="canonical" href="http://localhost:3000/2009/01/12/the-thing-about-security.html"/>
+  <script src="/js/helpers.js"></script>
+  <title>Alex Payne &mdash; The Thing About Security</title>
+<script src="http://127.0.0.1:35729/livereload.js"></script></head>
+
+<body>
+  <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
+  <div class="container">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="/">
+        <tt><strong>3</strong></tt>
+      </a>
+      <button class="button navbar-burger" data-target="navMenu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div class="navbar-menu" id="navMenu">
+      <div class="navbar-start">
+        <a class="navbar-item" href="/">Home</a>
+        <a href="/about.html" class="navbar-item" title="About the author and site">About</a>
+        <a href="/archive.html" class="navbar-item" title="Archived writing">Archive</a>
+        <a href="/publications.html" class="navbar-item" title="Publications">Publications</a>
+        <a href="/events.html" class="navbar-item" title="Events">Events</a>
+      </div>
+      <div class="navbar-end">
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+  <section class="hero is-light">
+  <div class="hero-body">
+    <div class="container">
+      <h1 class="title">Alex Payne</h1>
+      <h2 class="subtitle">
+        Writer, backer, erstwhile technologist.
+      </h2>
+    </div>
+  </div>
+</section>
+
+
+  <section class="section main-section">
+    <div class="container">
+      <div class="columns is-desktop">
+        <div class="column is-half is-offset-one-quarter">
+          <div class="content">
+            <div class="post">
+  <h1 id="the-thing-about-security">The Thing About Security</h1>
+
+<p>Last week, <a href="http://twitter.com">Twitter</a>, the thing I work on, had some security issues. Earlier in the week a phishing attack started going around. Then, someone used a <a href="http://en.wikipedia.org/wiki/Dictionary_attack">dictionary attack</a> to grab the account of one of our support staff, who has administrative privileges on the site. We cleaned up both of these issues just as fast as we could. The company communicated quickly and openly about what happened, and if anything, the press seemed to encourage more people to check Twitter out. It was a stressful week, but it forced some positive changes.</p>
+
+<p>It stings a bit to have experts like <a href="http://www.schneier.com/blog/archives/2009/01/bad_password_se.html">Bruce Schneier</a> call us out - and rightly so - for not shoring up holes like this sooner. Defending against a dictionary attack <em>is</em> basic stuff. Our fix for it was an afternoon’s work. But dictionary attacks just aren’t something that’s defended against by most web authentication stacks out of the box, which means the vulnerability lingers until a security review or a successful attack. In part, I think this is due to increasing specialization in computer security education, but that’s a topic for a longer post.</p>
+
+<p>The thing about security is that it requires stakeholders. I have a security background, but Twitter’s security isn’t my job. In fact, my job is pretty much the opposite: I open up as much of Twitter’s functionality as I can without (hopefully) making the system insecure. So while I’ve usually been a “first responder” to security incidents because of my background, it requires a major mental context switch from the work I normally do.</p>
+
+<p>Several months after I joined Twitter in early 2007, I suggested to the team that we do a full internal security audit. Stop all work, context switch to Bad Guy Mode, find issues, fix them. I wish I could say that we’ve done that audit in its entirety, but the demands of a growing product supported by a tiny team overshadowed its priority. Now we’re in an unwelcome position that many technical organizations get into: so far into a big code-base that’s never seen any substantial periodic audits that the only way to really find all the issues is to bring in some outside help - something I sincerely hope we end up doing, but is not my call.</p>
+
+<p>Outside security review is about spending enough money that your organization becomes its own security stakeholder. Invest in a high-priced security consultancy’s time for a week and you’d damn well better do something with their findings, right? It’s still a reactive model for a product’s security life-cycle, rather than a proactive one, but it’s something. Ultimately, outside security audits are the price a company pays for not building security mindfulness and education into day-to-day development.</p>
+
+<p>My advice: be a stakeholder in your organization or product’s security from day one. If you don’t have time to be that stakeholder, find one, either inside or outside of your company. Make sure that dollars are on the line, or it won’t get done. There are hundreds of security issues in any complex system that fall under the heading of “basic stuff”, and they won’t get fixed until that happens.</p>
+
+<p>Though maintaining users’ privacy and trust is incentive enough, the cruel reality is that good security is fueled by more than just good intentions and best efforts.</p>
+
+  <time class="is-pulled-right" datetime="2009-01-12">
+    &mdash; January 12, 2009
+  </time>
+</div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+  <div class="container">
+    <div class="content">
+      &copy; 2017 Alex Payne
+      &middot;
+      <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">CC BY-NC-ND</a>
+    </div>
+  </div>
+</footer>
+
+  
+</body>
+
+</html>

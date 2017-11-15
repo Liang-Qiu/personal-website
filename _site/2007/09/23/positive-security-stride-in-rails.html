@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="The online writing of Alex Payne" name="description">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bulma/0.6.0/css/bulma.min.css" type="text/css">
+  <link rel="stylesheet" href="/css/screen.css" type="text/css">
+  <link rel="alternate" type="application/atom+xml" title="Alex Payne" href="/atom.xml">
+  <link rel="canonical" href="http://localhost:3000/2007/09/23/positive-security-stride-in-rails.html"/>
+  <script src="/js/helpers.js"></script>
+  <title>Alex Payne &mdash; Positive Security Strides in Rails</title>
+<script src="http://127.0.0.1:35729/livereload.js"></script></head>
+
+<body>
+  <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
+  <div class="container">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="/">
+        <tt><strong>3</strong></tt>
+      </a>
+      <button class="button navbar-burger" data-target="navMenu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div class="navbar-menu" id="navMenu">
+      <div class="navbar-start">
+        <a class="navbar-item" href="/">Home</a>
+        <a href="/about.html" class="navbar-item" title="About the author and site">About</a>
+        <a href="/archive.html" class="navbar-item" title="Archived writing">Archive</a>
+        <a href="/publications.html" class="navbar-item" title="Publications">Publications</a>
+        <a href="/events.html" class="navbar-item" title="Events">Events</a>
+      </div>
+      <div class="navbar-end">
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+  <section class="hero is-light">
+  <div class="hero-body">
+    <div class="container">
+      <h1 class="title">Alex Payne</h1>
+      <h2 class="subtitle">
+        Writer, backer, erstwhile technologist.
+      </h2>
+    </div>
+  </div>
+</section>
+
+
+  <section class="section main-section">
+    <div class="container">
+      <div class="columns is-desktop">
+        <div class="column is-half is-offset-one-quarter">
+          <div class="content">
+            <div class="post">
+  <h1 id="positive-security-strides-in-rails">Positive Security Strides in Rails</h1>
+
+<p>At last year’s RailsConf Europe in London, I argued that security is a framework-level concern, and a great place for Rails to offer developers sensible, responsible conventions. Reading over the Rails changelog just now, I was thrilled to see some positive momentum in the security arena.</p>
+
+<p>First of all, Rick Olsen’s <a href="http://dev.rubyonrails.org/changeset/7592">csrf_killer plugin now comes standard in Rails</a> (you can see <a href="http://dev.rubyonrails.org/changeset/7596">more work being done on the merge here</a>). Edge Rails users can now decorate their controllers with a call to protect_from_forgery. Forms built “the Rails way” will then be secured with a hidden token. We use a similar pattern for critical actions in Twitter and it’s worked out well.</p>
+
+<p>Secondly, the <a href="http://dev.rubyonrails.org/changeset/7589">sanitize, strip_tags, and strip_links</a> helper methods are now far more robust. While Rails’s previous string sanitization was better than nothing, it let many non-trivial XSS attacks sneak by. This change should ensure that all but the most determined attackers can’t pollute your Rails-powered site with sneaky scripts.</p>
+
+<p>Improvements like these go a long way towards improving the default security stance of Rails applications. It’s also an example of the rewards of framework usage: you get good stuff for free.</p>
+
+  <time class="is-pulled-right" datetime="2007-09-23">
+    &mdash; September 23, 2007
+  </time>
+</div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+  <div class="container">
+    <div class="content">
+      &copy; 2017 Alex Payne
+      &middot;
+      <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">CC BY-NC-ND</a>
+    </div>
+  </div>
+</footer>
+
+  
+</body>
+
+</html>

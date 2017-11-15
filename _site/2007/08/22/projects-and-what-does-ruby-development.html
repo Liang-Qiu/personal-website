@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="The online writing of Alex Payne" name="description">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bulma/0.6.0/css/bulma.min.css" type="text/css">
+  <link rel="stylesheet" href="/css/screen.css" type="text/css">
+  <link rel="alternate" type="application/atom+xml" title="Alex Payne" href="/atom.xml">
+  <link rel="canonical" href="http://localhost:3000/2007/08/22/projects-and-what-does-ruby-development.html"/>
+  <script src="/js/helpers.js"></script>
+  <title>Alex Payne &mdash; Projects, and What Does Ruby Development Support on the Mac Really Mean?</title>
+<script src="http://127.0.0.1:35729/livereload.js"></script></head>
+
+<body>
+  <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
+  <div class="container">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="/">
+        <tt><strong>3</strong></tt>
+      </a>
+      <button class="button navbar-burger" data-target="navMenu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div class="navbar-menu" id="navMenu">
+      <div class="navbar-start">
+        <a class="navbar-item" href="/">Home</a>
+        <a href="/about.html" class="navbar-item" title="About the author and site">About</a>
+        <a href="/archive.html" class="navbar-item" title="Archived writing">Archive</a>
+        <a href="/publications.html" class="navbar-item" title="Publications">Publications</a>
+        <a href="/events.html" class="navbar-item" title="Events">Events</a>
+      </div>
+      <div class="navbar-end">
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+  <section class="hero is-light">
+  <div class="hero-body">
+    <div class="container">
+      <h1 class="title">Alex Payne</h1>
+      <h2 class="subtitle">
+        Writer, backer, erstwhile technologist.
+      </h2>
+    </div>
+  </div>
+</section>
+
+
+  <section class="section main-section">
+    <div class="container">
+      <div class="columns is-desktop">
+        <div class="column is-half is-offset-one-quarter">
+          <div class="content">
+            <div class="post">
+  <h1 id="projects-and-what-does-ruby-development-support-on-the-mac-really-mean">Projects, and What Does Ruby Development Support on the Mac Really Mean?</h1>
+
+<p>Work keeps me busy. Not sleeping-under-my-desk busy, but busy enough that I’m drained at the end of the day. The thought of writing yet more code once I’ve come home is usually unappealing. This is frustrating, because I’ve had two side projects that I’ve been trying to get out the door for some time. The eldest is Peeramour, which I still intend to deliver despite having long since missed my Valentine’s Day launch date. Really, I do.</p>
+
+<p>A more recent project is something I call <em>Quotidian</em>, a tagged database application for the Mac in which to store quotations. I’m not one to litter my writing, speech, and presentations with other people’s wisdom, but I like referring to relevant quotes when I’m thinking. The multi-purpose information capture applications out there like <a href="http://www.barebones.com/products/yojimbo/">Yojimbo</a> or <a href="http://www.devon-technologies.com/products/devonthink/">DEVONthink</a> don’t do it for me in this regard.</p>
+
+<p>My secret motivation for writing Quotidian is that I’ve wanted an excuse to learn Cocoa programming for some time. Initially, I was thinking that I’d learn Objective-C in the process. I’ve since rethought this because:</p>
+
+<p>None of the experienced Mac programmers I’ve talked to are particularly enthused about the language, even with the upcoming improvements in Objective-C 2.0. The consensus: “it’s fine… yeah.”</p>
+
+<p>There’s no long-term value to me in learning Objective-C; I’m not about to become a full-time Mac developer, nor am I eager to maintain legacy NeXT systems. There’s nothing else one really does with Obj-C, is my impression.</p>
+
+<p>There are languages I could learn that would have more value to me, or at least interest me more conceptually, and I can only fit so much in my head.</p>
+
+<p>I know Ruby, and there’s <a href="http://rubycocoa.sourceforge.net/">RubyCocoa</a> and <a href="http://www.rubyobjc.com/.So">RubyObjC</a> last night I ran through Erik Kastner’s super handy “”Your first few days on RubyCocoa“”:http://metaatem.net/2007/05/27/your-first-few-days-on-rubycocoa tutorial, which is more like your first fifteen minutes if you have a working Ruby install. I wired up a simple interface to a Ruby controller, smiled when it all worked, and was then ready to start building something that looked like a real Mac application.</p>
+
+<p>I started by looking for a way to put a toolbar in my application. That’s when I realized that you basically have to know everything about Cocoa programming in order to use something like RubyCocoa. RubyCocoa is for Cocoa programmers who want to write some stuff in Ruby, not Ruby programmers who want to take advantage of Cocoa. I’m not even sure anyone has implemented an NSToolbar with RubyCocoa (I’ll probably crib from this <a href="http://www.blog.caffeinatedmacs.com/nstoolbar-tutorial/">PyObjC</a> tutorial).</p>
+
+<p>I have much to learn. So this <a href="http://antoniocangiano.com/2007/08/21/a-preliminary-review-of-three-cocoa-and-objective-c-related-books/">comparative review of several Cocoa books</a> caught my eye today. I sympathize with the first comment:</p>
+
+<blockquote>
+  <p>“My basic test of a Cocoa book is a coherent explanation of why Interface Builder works the way it does: the Nextstep/Cocoa notion of ‘outlets’ and ‘messages’ and how IB works with them is the most confusingly counterintuitive concept Ive encountered in 32 years of programming, and most books scarcely mention it.”</p>
+</blockquote>
+
+<p>Everybody’s been chirping about Apple supporting development in dynamic languages like Ruby and Python, seemingly based solely on <a href="http://developer.apple.com/leopard/overview/apptech.html">this page</a> (see: “Picking Up the Pace of Cocoa Application Development”). It’s unclear, however, what form that support will take. As of yet, there’s nothing that illuminates the more oblique aspects of Cocoa development for us simple dynamic language folk. What’s more, it’s not immediately clear which of the Ruby bridges will be shipping with Leopard. While there are good community references like Tim Burks’ <a href="http://www.rubycocoa.com/">RubyCocoa Resources</a>, even accomplishing basic UI tasks like <a href="http://www.rubycocoa.com/ruby-external-sheets">displaying a sheet in a window</a> seems like much guesswork and fiddling.</p>
+
+<p>Some official guidance is necessary. Does Apple really want developers building full-fledged applications in anything but Objective-C, or is its “embrace” of dynamic languages going to be as rocky an affair as its fling with Java?</p>
+
+  <time class="is-pulled-right" datetime="2007-08-22">
+    &mdash; August 22, 2007
+  </time>
+</div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+  <div class="container">
+    <div class="content">
+      &copy; 2017 Alex Payne
+      &middot;
+      <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">CC BY-NC-ND</a>
+    </div>
+  </div>
+</footer>
+
+  
+</body>
+
+</html>

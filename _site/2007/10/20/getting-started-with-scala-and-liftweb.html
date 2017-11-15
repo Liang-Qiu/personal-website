@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="The online writing of Alex Payne" name="description">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bulma/0.6.0/css/bulma.min.css" type="text/css">
+  <link rel="stylesheet" href="/css/screen.css" type="text/css">
+  <link rel="alternate" type="application/atom+xml" title="Alex Payne" href="/atom.xml">
+  <link rel="canonical" href="http://localhost:3000/2007/10/20/getting-started-with-scala-and-liftweb.html"/>
+  <script src="/js/helpers.js"></script>
+  <title>Alex Payne &mdash; Getting Started with Scala and Liftweb</title>
+<script src="http://127.0.0.1:35729/livereload.js"></script></head>
+
+<body>
+  <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
+  <div class="container">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="/">
+        <tt><strong>3</strong></tt>
+      </a>
+      <button class="button navbar-burger" data-target="navMenu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div class="navbar-menu" id="navMenu">
+      <div class="navbar-start">
+        <a class="navbar-item" href="/">Home</a>
+        <a href="/about.html" class="navbar-item" title="About the author and site">About</a>
+        <a href="/archive.html" class="navbar-item" title="Archived writing">Archive</a>
+        <a href="/publications.html" class="navbar-item" title="Publications">Publications</a>
+        <a href="/events.html" class="navbar-item" title="Events">Events</a>
+      </div>
+      <div class="navbar-end">
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+  <section class="hero is-light">
+  <div class="hero-body">
+    <div class="container">
+      <h1 class="title">Alex Payne</h1>
+      <h2 class="subtitle">
+        Writer, backer, erstwhile technologist.
+      </h2>
+    </div>
+  </div>
+</section>
+
+
+  <section class="section main-section">
+    <div class="container">
+      <div class="columns is-desktop">
+        <div class="column is-half is-offset-one-quarter">
+          <div class="content">
+            <div class="post">
+  <h1 id="getting-started-with-scala-and-liftweb">Getting Started with Scala and Liftweb</h1>
+
+<p>I’ve had an ongoing dilemma when sitting down to work on Peeramour. I could write the site in Rails in an afternoon, which is tempting. Thing is, I write Ruby/Rails code all day. I’m burnt out on it. Plus, I’d like to learn something new if I’m going to be programming in my off-hours.</p>
+
+<p>Looking around the landscape of web application development, only one technology has really caught my eye: <a href="http://liftweb.net/">Liftweb</a>, a framework built with the <a href="http://www.scala-lang.org/">Scala</a> language, which in turn runs on the JVM. I like that both Lift and Scala borrow successful ideas where appropriate. I like that both are built with performance, scalability, and ease of deployment in mind. Most of all, though, I like that neither Lift nor Scala is particularly sexy. It’s just ugly enough to work.</p>
+
+<p>Getting started with Scala on Mac OS X 10.4 is pretty straightforward:Download either the Gzip or Bz2 Unix tarballs from the <a href="http://www.scala-lang.org/downloads/index.html">Scala downloads page</a>.</p>
+
+<p>Unpack your tarball of choice and put it somewhere sensible like ~/src/scala.</p>
+
+<p>Add the path to the bin directory to your shell’s PATH.You should now be able to run scala, type in some arithmetic expressions, that sort of thing. Hunky-dory. Now let’s get Lift-ed.</p>
+
+<ol>
+  <li>If you’ve got <a href="http://www.macports.org/">MacPorts</a> (and you should), do a sudo port install maven2. Maven is a build system for big honkin’ Java projects, and it takes care of grabbing dependencies and all sorts of junk.</li>
+  <li>Now, grab the actual <a href="http://code.google.com/p/liftweb/source">liftweb</a> source from Subversion. The packaged versions are <em>old</em>.</li>
+  <li>Pop into your new liftweb directory and do a mvn install. It’ll take a few minutes while Maven grabs and builds this and that, but at the end you’ll have built all the examples and whatnot.</li>
+  <li>A basic blog built in liftweb can be found in sites/hellolift. Head over there, run maven jetty:run and you can poke around at a real actual Lift app.Instructions for starting your own liftweb project can be found <a href="http://blog.lostlake.org/index.php?/archives/62-lift-QuickStart.html">at the developer’s blog</a>. Though that post was written in June, the invocations therein still work.</li>
+</ol>
+
+<p>I’m used to working in TextMate, but the only <a href="http://harnly.net/2007/blog/geek/macosx/textmate-bundle-for-scala/">Scala bundle</a> out there is pretty immature. I’m not after a bunch of IDE fanciness, but good syntax highlighting is a must. I imagine things are more hospitable in Eclipse, but that way perdition lies. My next step is to check out the <a href="https://lampsvn.epfl.ch/trac/scala/browser/scala-tool-support/trunk/src/vim">vim support</a>.</p>
+
+<p>Now that I’ve got a reasonable working environment, tomorrow I’m going to take a stab at some actual code.</p>
+
+  <time class="is-pulled-right" datetime="2007-10-20">
+    &mdash; October 20, 2007
+  </time>
+</div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+  <div class="container">
+    <div class="content">
+      &copy; 2017 Alex Payne
+      &middot;
+      <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">CC BY-NC-ND</a>
+    </div>
+  </div>
+</footer>
+
+  
+</body>
+
+</html>

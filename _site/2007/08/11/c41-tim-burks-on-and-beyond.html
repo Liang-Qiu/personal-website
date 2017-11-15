@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="The online writing of Alex Payne" name="description">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bulma/0.6.0/css/bulma.min.css" type="text/css">
+  <link rel="stylesheet" href="/css/screen.css" type="text/css">
+  <link rel="alternate" type="application/atom+xml" title="Alex Payne" href="/atom.xml">
+  <link rel="canonical" href="http://localhost:3000/2007/08/11/c41-tim-burks-on-and-beyond.html"/>
+  <script src="/js/helpers.js"></script>
+  <title>Alex Payne &mdash; C4-[1]: Tim Burks on "Bridges and Beyond"</title>
+<script src="http://127.0.0.1:35729/livereload.js"></script></head>
+
+<body>
+  <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
+  <div class="container">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="/">
+        <tt><strong>3</strong></tt>
+      </a>
+      <button class="button navbar-burger" data-target="navMenu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div class="navbar-menu" id="navMenu">
+      <div class="navbar-start">
+        <a class="navbar-item" href="/">Home</a>
+        <a href="/about.html" class="navbar-item" title="About the author and site">About</a>
+        <a href="/archive.html" class="navbar-item" title="Archived writing">Archive</a>
+        <a href="/publications.html" class="navbar-item" title="Publications">Publications</a>
+        <a href="/events.html" class="navbar-item" title="Events">Events</a>
+      </div>
+      <div class="navbar-end">
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+  <section class="hero is-light">
+  <div class="hero-body">
+    <div class="container">
+      <h1 class="title">Alex Payne</h1>
+      <h2 class="subtitle">
+        Writer, backer, erstwhile technologist.
+      </h2>
+    </div>
+  </div>
+</section>
+
+
+  <section class="section main-section">
+    <div class="container">
+      <div class="columns is-desktop">
+        <div class="column is-half is-offset-one-quarter">
+          <div class="content">
+            <div class="post">
+  <h1 id="c4-1-tim-burks-on-bridges-and-beyond">C4-[1]: Tim Burks on “Bridges and Beyond”</h1>
+
+<p>Tim Burks previously worked on very low-level chip software. In the process of delving deep into computer technology and learning the gritty details he claims to have “lost a lot of heros.”</p>
+
+<p>But Brad Cox, author of Objective-C, remains a hero of his, particularly for his paper “”Planning the Software Industrial Revolution“:http://virtualschool.edu/cox/pub/PSIR/”. Cox saw dynamic binding as essential for progress in the software industry, and Tim sees the need for a glue language beyond Objective-C. His requirements for a glue are reflection, interactivity, and expressiveness, all of which he found in Ruby.</p>
+
+<p>To bridge ObjC and Ruby you can wedge libFFI between the two languages to bridge their respective method tables. Tim spent the first half of 2006 working with and documenting RubyCocoa, but ended up frustrated. He started working on RubyObjC, and overcame seven challenges in the process:</p>
+
+<p>Message syntax is far different in ObjC than in most other languages.</p>
+
+<p>Types have to be translated between the two languages.</p>
+
+<p>Libraries have to be bridged (ex: NSDate to Ruby’s Date).</p>
+
+<p>Object storage: each language has its own way of constructing and storing objects.</p>
+
+<p>Memory management: GC can kick in when you don’t expect it.</p>
+
+<p>Threading.</p>
+
+<p>Namespace conflicts.</p>
+
+<p>Tim goes on to demo a visual chip design application that was mocked up in Ruby with an interface in Cocoa. While parts of it have since migrated to ObjC, a Ruby console is available at all times. As he moves around a chip and traces paths between wires there are oohs and aahs. It’s really impressive stuff.</p>
+
+<p>At this point, the talk veers to Tim’s latest project: Nu, an interpreted dialect of Lisp “written on, with, and for Objective-C.” He demos a simple blog editing app with an embedded Nu console, including language functionality that mirrors Ruby’s method_missing. More oohs and aahs. Colin Barret posted to the Twitter backchannel: “As a language nerd, this is getting kind of pornographic.”</p>
+
+<p>As a further demo, we find out that the blog server that the blog editor is talking to is all written in Nu with CoreData behind the scenes. A choice quote: “[the server code] is not as bureaucratic and dictatorial as Rails.” Templates are written in an Erb-like syntax.
+All told, probably the most brilliant talk so far this weekend.</p>
+
+  <time class="is-pulled-right" datetime="2007-08-11">
+    &mdash; August 11, 2007
+  </time>
+</div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+  <div class="container">
+    <div class="content">
+      &copy; 2017 Alex Payne
+      &middot;
+      <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">CC BY-NC-ND</a>
+    </div>
+  </div>
+</footer>
+
+  
+</body>
+
+</html>

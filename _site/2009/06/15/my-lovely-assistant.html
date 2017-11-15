@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="The online writing of Alex Payne" name="description">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bulma/0.6.0/css/bulma.min.css" type="text/css">
+  <link rel="stylesheet" href="/css/screen.css" type="text/css">
+  <link rel="alternate" type="application/atom+xml" title="Alex Payne" href="/atom.xml">
+  <link rel="canonical" href="http://localhost:3000/2009/06/15/my-lovely-assistant.html"/>
+  <script src="/js/helpers.js"></script>
+  <title>Alex Payne &mdash; An Unfinished Idea: My Lovely Assistant</title>
+<script src="http://127.0.0.1:35729/livereload.js"></script></head>
+
+<body>
+  <nav class="navbar is-dark" role="navigation" aria-label="main navigation">
+  <div class="container">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="/">
+        <tt><strong>3</strong></tt>
+      </a>
+      <button class="button navbar-burger" data-target="navMenu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div class="navbar-menu" id="navMenu">
+      <div class="navbar-start">
+        <a class="navbar-item" href="/">Home</a>
+        <a href="/about.html" class="navbar-item" title="About the author and site">About</a>
+        <a href="/archive.html" class="navbar-item" title="Archived writing">Archive</a>
+        <a href="/publications.html" class="navbar-item" title="Publications">Publications</a>
+        <a href="/events.html" class="navbar-item" title="Events">Events</a>
+      </div>
+      <div class="navbar-end">
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+  <section class="hero is-light">
+  <div class="hero-body">
+    <div class="container">
+      <h1 class="title">Alex Payne</h1>
+      <h2 class="subtitle">
+        Writer, backer, erstwhile technologist.
+      </h2>
+    </div>
+  </div>
+</section>
+
+
+  <section class="section main-section">
+    <div class="container">
+      <div class="columns is-desktop">
+        <div class="column is-half is-offset-one-quarter">
+          <div class="content">
+            <div class="post">
+  <h1 id="an-unfinished-idea-my-lovely-assistant">An Unfinished Idea: My Lovely Assistant</h1>
+
+<p>An information management tool; essentially, a wikified outliner, or an outliner for linked data structures, depending on how you want to conceive of it.</p>
+
+<p>At its simplest, My Lovely Assistant (“lass”, for short and for command line use) is an outliner that allows child nodes to be (links to) other documents. If you have a look at the forums for popular Mac OS X outliner OmniOutliner, you’ll see many a request for the addition of some sort of multi-document paradigm. Most anyone who’s gotten comfortable with an outliner finds it difficult to store information any other way, but the one-outline-at-a-time limitation of most outliners impedes many use cases. By linking outlines as one would pages in a wiki, it’s possible to build a rich web of hierarchically structured data while moving beyond a single-document mode of interaction.</p>
+
+<p>One possible implementation, targeting the browser, is to represent every outline as a JSON document. Documents are linked together by making child nodes URLs; any URL ending in “.json” would be treated as a new structure to be nested within the document. JSON documents that are not structured as outlines could be included, and rendered on a “best effort” basis, perhaps through an extension framework. Imagine a master outline in which some of the children are outlines in their own right, but other children are “live” JSON data from around the web: Twitter users or statuses, books from the Times Best Sellers list, etc.</p>
+
+<p>A more desktop-oriented implementation could simply treat “outline nodes” as the Mac OS X Finder does nested folders when in column view. Click on a nested outline, and the interface swoops to the right to bring its contents into focus while retaining a visual linkage between the child outline and its parent node.</p>
+
+<p>This is another thing that I’ve wanted to use every day since I thought of it. I’m aware of other attempts at wiki/hypertext-capable outliners, but none have caught on.</p>
+
+  <time class="is-pulled-right" datetime="2009-06-15">
+    &mdash; June 15, 2009
+  </time>
+</div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+  <div class="container">
+    <div class="content">
+      &copy; 2017 Alex Payne
+      &middot;
+      <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">CC BY-NC-ND</a>
+    </div>
+  </div>
+</footer>
+
+  
+</body>
+
+</html>
