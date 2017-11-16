@@ -1,7 +1,7 @@
-enforce_ssl: al3x.net
+enforce_ssl: liangqiu.net
 highlighter: rouge
 livereload: true
 lsi: false
 markdown: kramdown
 port: 3000
-url: https://al3x.net
+url: https://liangqiu.net

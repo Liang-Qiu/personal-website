@@ -1,6 +1,6 @@
 # About
 
-[My personal site](https://al3x.net/). Uses [Jekyll](https://github.com/jekyll/jekyll) for static site generation.
+[My personal site](https://liangqiu.net/). Uses [Jekyll](https://github.com/jekyll/jekyll) for static site generation.
 
 ## License
 
@@ -8,7 +8,7 @@ All original textual content is licensed under the [Creative Commons Attribution
 
 All code is licensed under the [Apache License, Version 2.0](https://www.apache.org/licenses/LICENSE-2.0.html), reproduced below.
 
-> Copyright 2002 - 2015 Alex Payne
+> Copyright 2017 Liang Qiu
 >
 > Licensed under the Apache License, Version 2.0 (the "License");
 > you may not use this file except in compliance with the License.
