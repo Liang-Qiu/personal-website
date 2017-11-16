@@ -3,10 +3,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
  <title>Liang Qiu</title>
- <link href="https://liangqiu.net/atom.xml" rel="self"/>
- <link href="https://liangqiu.net/"/>
+ <link href="https://liang-qiu.github.io/atom.xml" rel="self"/>
+ <link href="https://liang-qiu.github.io/"/>
  <updated>{{ site.time | date_to_xmlschema }}</updated>
- <id>http://liangqiu.net/</id>
+ <id>http://liang-qiu.github.io/</id>
  <author>
    <name>Liang Qiu</name>
    <email>liangqiu@ucla.edu</email>
@@ -14,13 +14,13 @@
  {% for post in site.posts limit:10 %}
  <entry>
    <title>{{ post.title }}</title>
-   <link href="https://liangqiu.net{{ post.url }}"/>
+   <link href="https://liang-qiu.github.io{{ post.url }}"/>
    <updated>{{ post.date | date_to_xmlschema }}</updated>
-   <id>http://liangqiu.net{{ post.id }}</id>
+   <id>http://liang-qiu.github.io{{ post.id }}</id>
    <content type="html">{{ post.content | xml_escape }}</content>
    <author>
      <name>Liang Qiu</name>
-     <uri>https://liangqiu.net/about.html</uri>
+     <uri>https://liang-qiu.github.io/about.html</uri>
    </author>
  </entry>
  {% endfor %}

@@ -1,6 +1,6 @@
 # About
 
-[My personal site](https://liangqiu.net/). Uses [Jekyll](https://github.com/jekyll/jekyll) for static site generation.
+[My personal site](https://liang-qiu.github.io/). Uses [Jekyll](https://github.com/jekyll/jekyll) for static site generation.
 
 ## License
 

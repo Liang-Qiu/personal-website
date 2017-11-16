@@ -22,5 +22,5 @@ If you need to contact me privately, please use my [PGP key](/liangqiu.asc). My 
 ## This Site
 
 * Generated with [Jekyll](http://jekyllrb.com/)
-* Hosted on [GitHub Pages](https://pages.github.com/) via [CloudFlare](https://www.cloudflare.com/)
-* Source on [GitHub](https://github.com/Liang-Qiu/Blogs)
+* Hosted on [GitHub Pages](https://pages.github.com/)
+* Source on [GitHub](https://github.com/Liang-Qiu/homepage)
