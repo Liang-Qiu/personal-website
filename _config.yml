@@ -5,3 +5,5 @@ lsi: false
 markdown: kramdown
 port: 3000
 url: https://liang-qiu.github.io/homepage
+
+theme: jekyll-theme-cayman
