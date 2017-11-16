@@ -1,0 +1,55 @@
+==================================================================
+https://keybase.io/liangqiu
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://liang-qiu.github.io
+  * I am liangqiu (https://keybase.io/liangqiu) on keybase.
+  * I have a public key ASDRmukhXjm0pUNN5VWye-pa9w1zx5CiLJ5DKyanLd2tzwo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0101405053e3541b05e76b258fc05995065df37aca7287c882ba9f964d493d4294030a",
+      "host": "keybase.io",
+      "kid": "0120d19ae9215e39b4a5434de555b27bea5af70d73c790a22c9e432b26a72dddadcf0a",
+      "uid": "5b1acf138bda6f1a3dfaef03fdeb2c19",
+      "username": "liangqiu"
+    },
+    "merkle_root": {
+      "ctime": 1510824786,
+      "hash": "ed89c6129844fc58c27882f57cdade65f0b8cf10f712a7344cfcf3580ba97f40dbaceead39c239cb59763a407f8cc3253d1e98e217f8bd29d312318ab4c0421f",
+      "hash_meta": "e2c8a75a4b98639e608d3a87f334133bed47d5c39df431f8668fb3a75ec48427",
+      "seqno": 1710450
+    },
+    "service": {
+      "hostname": "liang-qiu.github.io",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "1.0.34"
+  },
+  "ctime": 1510824863,
+  "expire_in": 504576000,
+  "prev": "941c7ba4ae319e96a665f8d951b264db3f436457e0f1060c12091ed0ba7337e5",
+  "seqno": 7,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEg0ZrpIV45tKVDTeVVsnvqWvcNc8eQoiyeQysmpy3drc8Kp3BheWxvYWTFA0t7ImJvZHkiOnsia2V5Ijp7ImVsZGVzdF9raWQiOiIwMTAxNDA1MDUzZTM1NDFiMDVlNzZiMjU4ZmMwNTk5NTA2NWRmMzdhY2E3Mjg3Yzg4MmJhOWY5NjRkNDkzZDQyOTQwMzBhIiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwZDE5YWU5MjE1ZTM5YjRhNTQzNGRlNTU1YjI3YmVhNWFmNzBkNzNjNzkwYTIyYzllNDMyYjI2YTcyZGRkYWRjZjBhIiwidWlkIjoiNWIxYWNmMTM4YmRhNmYxYTNkZmFlZjAzZmRlYjJjMTkiLCJ1c2VybmFtZSI6ImxpYW5ncWl1In0sIm1lcmtsZV9yb290Ijp7ImN0aW1lIjoxNTEwODI0Nzg2LCJoYXNoIjoiZWQ4OWM2MTI5ODQ0ZmM1OGMyNzg4MmY1N2NkYWRlNjVmMGI4Y2YxMGY3MTJhNzM0NGNmY2YzNTgwYmE5N2Y0MGRiYWNlZWFkMzljMjM5Y2I1OTc2M2E0MDdmOGNjMzI1M2QxZTk4ZTIxN2Y4YmQyOWQzMTIzMThhYjRjMDQyMWYiLCJoYXNoX21ldGEiOiJlMmM4YTc1YTRiOTg2MzllNjA4ZDNhODdmMzM0MTMzYmVkNDdkNWMzOWRmNDMxZjg2NjhmYjNhNzVlYzQ4NDI3Iiwic2Vxbm8iOjE3MTA0NTB9LCJzZXJ2aWNlIjp7Imhvc3RuYW1lIjoibGlhbmctcWl1LmdpdGh1Yi5pbyIsInByb3RvY29sIjoiaHR0cHM6In0sInR5cGUiOiJ3ZWJfc2VydmljZV9iaW5kaW5nIiwidmVyc2lvbiI6MX0sImNsaWVudCI6eyJuYW1lIjoia2V5YmFzZS5pbyBnbyBjbGllbnQiLCJ2ZXJzaW9uIjoiMS4wLjM0In0sImN0aW1lIjoxNTEwODI0ODYzLCJleHBpcmVfaW4iOjUwNDU3NjAwMCwicHJldiI6Ijk0MWM3YmE0YWUzMTllOTZhNjY1ZjhkOTUxYjI2NGRiM2Y0MzY0NTdlMGYxMDYwYzEyMDkxZWQwYmE3MzM3ZTUiLCJzZXFubyI6NywidGFnIjoic2lnbmF0dXJlIn2jc2lnxEA1UMDkw8VBor6ng55Fbi1pEaI+I66YLu0irwZm8FQGH35jRBDtTSaJSxQRKEBRCE8D/LXZPhL9C9mPzragCMUKqHNpZ190eXBlIKRoYXNogqR0eXBlCKV2YWx1ZcQgDN8zU8cabzj82Z4ZVV3mjM5J5xOVduljJlkD46SH4pCjdGFnzQICp3ZlcnNpb24B
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/liangqiu
+
+==================================================================
