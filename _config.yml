@@ -1,0 +1,7 @@
+enforce_ssl: liang-qiu.github.io
+highlighter: rouge
+livereload: true
+lsi: false
+markdown: kramdown
+port: 3000
+url: https://liang-qiu.github.io
