@@ -11,7 +11,7 @@ title: "ubuntu 16.04.2 LTS + cuda 8.0 + cudnn v6.0 + tensorflow installation gui
 * Give /boot more space, maybe 1 GB   
 * Don't use EasyBCD  
 * Disable ubuntu update (System Settings -> Software & Updates -> Updates -> Notify me of a new Ubuntu version: Never)
-  
+
 ### cuda 8.0 + cudnn v6.0 installtion you can also check this [guide](http://blog.csdn.net/autocyz/article/details/52299889).  
 * **Install nvidia driver**  
   1. Check your driver [here](http://www.nvidia.com/Download/index.aspx?lang=en-us)  
