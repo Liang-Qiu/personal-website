@@ -10,7 +10,7 @@ IEEE/ACM TRANSACTIONS ON AUDIO, SPEECH, AND LANGUAGE PROCESSING, VOL. 23, NO. 3,
 A link to this paper is [here](http://ieeexplore.ieee.org/document/6998838/?reload=true).  
 
 ### Background
-Slot filling is one the key problems in "spoken language understanding" (SLU). Typically, SLU consists of three sub-tasks: domain detection, intent determination and slot filling. It can convert the speech recognition results of users' utterances into users' intent along with specific meta-information included such as departure city and arrival city (example below) so that the dialogue manager can decide the most approiate action based on that.  
+Slot filling is one the key problems in "spoken language understanding" (SLU). Typically, SLU consists of three sub-tasks: domain detection, intent determination and slot filling. It can convert the speech recognition results of users' utterances into users' intent along with specific meta-information included such as departure city and arrival city (example below) so that the dialogue manager can decide the most approiate action based on that. If you are developing an Alexa skill or Google Home application, you will see they similarly require you to specify all the possible user intents. And under each intent, you also need to give sample user utterances and highlight the words which corresponding to the slot types you need.  
 
 Below is an example sentence with domain, intent, typical domain-independent named entities and slot/concept annotations illustrated in the popular in/out/begin (IOB) representation.  
 
@@ -20,7 +20,7 @@ Standard approaches to solving the slot filling problem include generative model
 
 ### Key idea  
 **Word Embeddings**    
-The embedding matrix can be initialized with pretrained values on an external dataset (GloVe, word2vec) or initialized from random values. This paper found these two mothods led to the same results on the ATIS dataset.
+The embedding matrix can be initialized with pretrained values on an external dataset (GloVe, word2vec) or initialized from random values. This paper found these two mothods led to the same results on the ATIS dataset. But if we try to do transfering training which means our testing data is from a different dataset as training data, I think we do need pretrained word embedding values for initialization and only train the most K frequent words in our training dataset.
 
 **Context Word Window**    
 This paper used a context word window as the input for the RNNs.  
@@ -28,7 +28,7 @@ This paper used a context word window as the input for the RNNs.
 $$ C_d(l_{i-d}^{i+d}) = \tilde{E}\tilde{l}_{i-d}^{i+d} \in \rm I\!R $$ 
 
 where $$\tilde{E}$$ corresponds to the embedding matrix $$E$$ replicated vertically $$2d + 1$$ times and $$\tilde{l}_{i-d}^{i+d}$$ corresponds to the concatenation of one-hot word index vectors.
-This gives us the word embedding vectors of the d-context word window ($$2d+1$$ words).  
+This gives us the word embedding vectors of the d-context word window ($$2d+1$$ words). But I think if we introduce temporal feedback using bidirectional LSTM, it's not necessary to use word window as input.
 
 **Elman, Jordan and Hybrid Architectures**  
 Just like the basic RNNs we discussed in class, the Elman RNN dynamics can be written as:  
@@ -58,8 +58,8 @@ $$
 \end{align*}
 $$  
 
-### Discussion
 Similar to Maximum Entropy Markov Model, because of the possibility local normalization, the RNNs suffer from the same label bias problem. To alleviate this, this paper proposed two methods: slot language models and recurrent CRFs.  
+  
 **Slot Language Models**  
 To approximate CRF, this paper applied the Viterbi algorithm using the tag level posterior probabilities obtained from the RNN. And the state observation likelihoods are as follow: 
 
@@ -72,6 +72,8 @@ $$
 \end{align*}
 $$ 
 
+I am not sure about how to get $$P(s_t)$$, maybe the proportion of that tag in the training data?
+
 **Recurrent CRF**  
 This method takes advantage of the sequence-level discrimination ability of the CRF and the feature learning ability of the RNN. The conditional probability of a slot sequence is as folow:  
 
@@ -83,4 +85,5 @@ $$
 \end{align*}
 $$ 
 
-Also, this paper didn't mention the vanishing gradients problem of RNNs. To avoid this, we may use LSTM or GRU instead of Elman or Jordan RNNs in our final project.
+### Discussion
+In all, the RNNs used in this paper are still the state-of-the-art method of the slot-filling problem. It did have an improvement compared to the CRF baseline. But this paper didn't mention the vanishing gradients problem of RNNs. To avoid this, we may use LSTM or GRU instead of Elman or Jordan RNNs in our final project. Also, RNNs require a large training dataset while it is hard to get enough training data in a specific domain to train such a model in practice.
