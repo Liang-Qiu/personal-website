@@ -7,7 +7,7 @@ title: "Paper Summary of Using Reccurent Neural Networks for Slot Filling in Spo
 ================
 Grégoire Mesnil, Yann Dauphin, Kaisheng Yao, Yoshua Bengio, Li Deng, Dilek Hakkani-Tur, Xiaodong He, Larry Heck, Gokhan Tur, Dong Yu, Geoffrey Zweig.  
 IEEE/ACM TRANSACTIONS ON AUDIO, SPEECH, AND LANGUAGE PROCESSING, VOL. 23, NO. 3, MARCH 2015  
-A link to this paper is [here](http://ieeexplore.ieee.org/document/6998838/?reload=true).  
+A link to this paper is [**here**](http://ieeexplore.ieee.org/document/6998838/?reload=true).  
 
 ### Background
 Slot filling is one the key problems in "spoken language understanding" (SLU). Typically, SLU consists of three sub-tasks: domain detection, intent determination and slot filling. It can convert the speech recognition results of users' utterances into users' intent along with specific meta-information included such as departure city and arrival city (example below) so that the dialogue manager can decide the most approiate action based on that. If you are developing an Alexa skill or Google Home application, you will see they similarly require you to specify all the possible user intents. And under each intent, you also need to give sample user utterances and highlight the words which corresponding to the slot types you need.  
