@@ -1,9 +1,11 @@
 # About
 
 [My personal site](https://liang-qiu.github.io). Uses [Jekyll](https://github.com/jekyll/jekyll) for static site generation.
-To run it in local, run '''
+To run it in local, run
+```
 source ~/.rvm/scripts/rvm
-bundle exec jekyll serve''' 
+bundle exec jekyll serve
+``` 
 in terminal.
 ## License
 
