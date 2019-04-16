@@ -11,3 +11,9 @@ The following command (with the help of tee command) writes the output both to t
 ```
 $ ls | tee file
 ```
+
+**Du** command is used to view the disk usage.  
+The following command lists the usage of current folder and sorts the result.
+```
+$ ds -h --max-depth=1 | sort -h
+```
