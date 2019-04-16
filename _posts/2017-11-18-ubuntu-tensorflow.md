@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "ubuntu 16.04.2 LTS + cuda 8.0 + cudnn v6.0 + tensorflow installation guide"
+title: "Ubuntu 16.04.2 LTS + CUDA 8.0 + cudnn v6.0 + Tensorflow Installation Guide"
 ---
 
 {{ page.title }}
