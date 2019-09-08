@@ -1,18 +1,24 @@
 # About
 
-[My personal site](https://liang-qiu.github.io). Uses [Jekyll](https://github.com/jekyll/jekyll) for static site generation.
-To run it in local, run the following commands:  
-```
-source ~/.rvm/scripts/rvm
+[My personal site](https://liang-qiu.github.io). Uses [Jekyll](https://github.com/jekyll/jekyll) for static site generation.  
+To run it in local:  
+First Install [rvm](https://github.com/rvm/ubuntu_rvm),
+then run the following commands in terminal:  
+
+``` bash
+sudo apt-get install nodejs
+gem install jekyll bundler
+bundle install
 bundle exec jekyll serve
-``` 
-## License
+```  
+
+## License  
 
 All original textual content is licensed under the [Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License](http://creativecommons.org/licenses/by-nc-nd/4.0/).
 
 All code is licensed under the [Apache License, Version 2.0](https://www.apache.org/licenses/LICENSE-2.0.html), reproduced below.
 
-> Copyright 2017 Liang Qiu
+> Copyright 2019 Liang Qiu
 >
 > Licensed under the Apache License, Version 2.0 (the "License");
 > you may not use this file except in compliance with the License.
