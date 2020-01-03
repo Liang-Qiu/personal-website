@@ -5,8 +5,8 @@ title: About
 
 # About the author and this site
 
-I'm Liang Qiu. I am a PhD student of Electrical and Computer Engineering department at UCLA.
-[CV](https://drive.google.com/drive/u/1/my-drive)
+I'm Liang Qiu. I am a PhD student of Electrical and Computer Engineering department at UCLA.  
+[[CV]](https://drive.google.com/file/d/103JJXCfzedhemBPIA-faTuOLj4S5txVR/view?usp=sharing)
 
 - - -
 
