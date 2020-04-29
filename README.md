@@ -18,7 +18,7 @@ All original textual content is licensed under the [Creative Commons Attribution
 
 All code is licensed under the [Apache License, Version 2.0](https://www.apache.org/licenses/LICENSE-2.0.html), reproduced below.
 
-> Copyright 2019 Liang Qiu
+> Copyright 2020 Liang Qiu
 >
 > Licensed under the Apache License, Version 2.0 (the "License");
 > you may not use this file except in compliance with the License.
