@@ -1,6 +1,6 @@
 # Personal Website - Hugo
 
-This is a minimalist personal website built with [Hugo](https://gohugo.io/), inspired by the clean designs of [Jan Leike](https://jan.leike.name/), [John Schulman](http://joschu.net/), and [Jiaxin Wen](https://jiaxin-wen.github.io/).
+This is a minimalist personal website built with [Hugo](https://gohugo.io/).
 
 ## Quick Start
 
