@@ -1,0 +1,9 @@
+baseURL = 'https://liang-qiu.github.io'
+languageCode = 'en-us'
+title = 'Liang Qiu'
+theme = 'minimal'
+
+[params]
+  subtitle = "Researcher focusing on language model alignment and reinforcement learning"
+  email = "liangqiu@outlook.com"
+  github = "Liang-Qiu"

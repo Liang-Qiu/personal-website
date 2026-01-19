@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="{{ .Site.Params.subtitle | default .Site.Title }}">
+  <title>{{ .Site.Title }}</title>
+  <link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
+</head>
+<body>
+  <nav>
+    <a href="#about">About Me</a>
+    <a href="#research">My Research</a>
+    <a href="#publications">Selected Publications</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  
+  <main class="content">
+    {{ block "main" . }}{{ end }}
+  </main>
+  
+  <footer>
+    &copy; {{ now.Year }} {{ .Site.Title }}
+    &middot;
+    <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">CC BY-NC-ND</a>
+  </footer>
+</body>
+</html>

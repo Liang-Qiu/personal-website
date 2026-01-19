@@ -1,0 +1,11 @@
+{{ define "main" }}
+<article>
+  <h1>{{ .Title }}</h1>
+  {{ .Content }}
+  {{ if .Date }}
+  <time datetime="{{ .Date.Format "2006-01-02" }}" style="display: block; margin-top: 2rem; color: #666; text-align: right;">
+    &mdash; {{ .Date.Format "January 2, 2006" }}
+  </time>
+  {{ end }}
+</article>
+{{ end }}

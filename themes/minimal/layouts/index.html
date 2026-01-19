@@ -1,0 +1,82 @@
+{{ define "main" }}
+<!-- Two-column layout -->
+<div class="page-layout">
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <img src="/images/Profile.jpg" alt="Liang Qiu" class="profile-photo">
+    <div class="sidebar-links">
+      <a href="https://scholar.google.com/citations?user=mr1VxDwAAAAJ&hl=en">Scholar</a>
+      <a href="https://x.com/liangqiu_1994">X</a>
+      <a href="https://www.linkedin.com/in/liangqiu/">LinkedIn</a>
+      <a href="https://drive.google.com/file/d/14MeDOSI2_fX69YK8N-NHHnQ-AHDFhHSI/view?usp=sharing">CV</a>
+    </div>
+  </aside>
+
+  <!-- Main Content -->
+  <div class="main-content">
+    <!-- Header -->
+    <header id="about">
+      <h1>Liang Qiu</h1>
+      <p>Hi! My name is Liang Qiu. I'm a researcher focusing on <strong>language model alignment</strong> and <strong>reinforcement learning</strong>. I was a Senior Applied Scientist at Amazon and earned my Ph.D. in Electrical and Computer Engineering from UCLA, advised by <a href="http://www.stat.ucla.edu/~sczhu/">Prof. Song-Chun Zhu</a> and <a href="https://www.ee.ucla.edu/achuta-kadambi/">Prof. Achuta Kadambi</a>.</p>
+    </header>
+
+    <!-- My Research Section -->
+    <section id="research">
+      <h2>My Research</h2>
+      <p>My research interests lie in Natural Language Processing and Conversational AI. My long-term goal is to enhance both the EQ (aligning AI systems with human values, mental state modeling, and social reasoning) and the IQ (advancing their reasoning and decision-making capabilities).</p>
+      
+      <p>Currently, I am working on <strong>automated research for scalable oversight</strong>.</p>
+    </section>
+
+<!-- Selected Publications Section -->
+<section id="publications">
+  <h2>Selected Publications</h2>
+  
+  <ul class="pub-list">
+    <li><strong>Think-RM: Enabling Long-Horizon Reasoning in Generative Reward Models</strong><br>I. Hong, C. Yu, L. Qiu, W. Yan, Z. Xu, H. Jiang, Q. Zhang, Q. Lu, X. Liu, C. Zhang, T. Zhao.<br>NeurIPS 2025. <a href="https://arxiv.org/pdf/2505.16265" class="pub-link">[pdf]</a> <a href="https://github.com/IlgeeHong/Think-RM" class="pub-link">[code]</a></li>
+    
+    <li><strong>Ask a Strong LLM Judge when Your Reward Model is Uncertain</strong><br>Z. Xu, Q. Lu, Q. Zhang, L. Qiu, I. Hong, C. Yu, W. Yao, Y. Liu, H. Jiang, L. Li, H. Yun, T. Zhao.<br>NeurIPS 2025.</li>
+    
+    <li><strong>Self-Rewarding PPO: Aligning Large Language Models with Demonstrations Only</strong><br>Q. Zhang, L. Qiu, I. Hong, Z. Xu, T. Liu, S. Li, R. Zhang, Z. Li, L. Li, B. Yin, C. Zhang, J. Chen, H. Jiang, T. Zhao.<br>COLM 2025. <a href="https://openreview.net/pdf?id=cOlHP5E3qF" class="pub-link">[pdf]</a></li>
+    
+    <li><strong>WebAgent-R1: Training Web Agents via End-to-End Multi-Turn Reinforcement Learning</strong><br>Z. Wei, W. Yao, Y. Liu, W. Zhang, Q. Lu, L. Qiu, C. Yu, P. Xu, C. Zhang, B. Ying, H. Yun, L. Li.<br>EMNLP 2025. <a href="https://arxiv.org/pdf/2505.16421" class="pub-link">[pdf]</a> <a href="https://github.com/weizhepei/WebAgent-R1" class="pub-link">[code]</a></li>
+    
+    <li><strong>DORM: Preference Data Weights Optimization for Reward Modeling in LLM Alignment</strong><br>R. Zhang, C. Zhang, X. Zhang, L. Qiu, H. Jiang, Y. Zhuang, Q. Zhang, H. Yun, X. Li, B. Yin, T. Zhao, C. Zhang.<br>EMNLP Findings 2025.</li>
+    
+    <li><strong>Can Language Models Follow Multiple Turns of Entangled Instructions?</strong><br>C. Han, X. Liu, H. Wang, S. Li, J. Yang, H. Jiang, Z. Wang, Q. Yin, L. Qiu, C. Yu, Y. Gao, Z. Li, B. Yin, J. Shang, H. Ji.<br>EMNLP Findings 2025.</li>
+    
+    <li><strong>Discriminative Finetuning of Generative Large Language Models without Reward Models and Preference Data</strong><br>S. Guo, I. Hong, V. Balmaseda, C. Yu, L. Qiu, X. Liu, H. Jiang, T. Zhao, T. Yang.<br>ICML 2025. <a href="https://arxiv.org/pdf/2502.18679" class="pub-link">[pdf]</a> <a href="https://github.com/Optimization-AI/DFT" class="pub-link">[code]</a></li>
+    
+    <li><strong>Aligning Large Language Models via Fine-grained Supervision</strong><br>D. Xu, L. Qiu, M. Kim, F. Ladhak, J. Do.<br>ACL 2024. <a href="https://arxiv.org/abs/2406.02756" class="pub-link">[pdf]</a></li>
+    
+    <li><strong>A Survey of Deep Learning for Mathematical Reasoning</strong><br>P. Lu, L. Qiu, W. Yu, S. Welleck, K.-W. Chang.<br>ACL 2023. <a href="https://arxiv.org/pdf/2212.10535.pdf" class="pub-link">[pdf]</a> <a href="https://github.com/lupantech/dl4math" class="pub-link">[web]</a></li>
+    
+    <li><strong>Dynamic Prompt Learning via Policy Gradient for Semi-structured Mathematical Reasoning</strong><br>P. Lu, L. Qiu, K.-W. Chang, Y. N. Wu, S.-C. Zhu, T. Rajpurohit, P. Clark, A. Kalyan.<br>ICLR 2023. <a href="https://arxiv.org/abs/2209.14610" class="pub-link">[pdf]</a> <a href="https://tabmwp.github.io/" class="pub-link">[web]</a> <a href="https://github.com/lupantech/PromptPG" class="pub-link">[code]</a></li>
+    
+    <li><strong>Learn to Explain: Multimodal Reasoning via Thought Chains for Science Question Answering</strong><br>P. Lu, S. Mishra, T. Xia, L. Qiu, K.-W. Chang, S.-C. Zhu, O. Tafjord, P. Clark, A. Kalyan.<br>NeurIPS 2022. <a href="https://lupantech.github.io/papers/neurips22_scienceqa.pdf" class="pub-link">[pdf]</a> <a href="https://scienceqa.github.io/" class="pub-link">[web]</a> <a href="https://github.com/lupantech/ScienceQA" class="pub-link">[code]</a></li>
+    
+    <li><strong>Towards Socially Intelligent Agents with Mental State Transition and Human Utility</strong><br>L. Qiu*, Y. Zhao*, Y. Liang, P. Lu, W. Shi, Z. Yu, S.-C. Zhu.<br>SIGDIAL 2022. <a href="https://arxiv.org/abs/2103.07011" class="pub-link">[pdf]</a></li>
+    
+    <li><strong>ValueNet: A New Dataset for Human Value Driven Dialogue System</strong><br>L. Qiu, Y. Zhao, J. Li, P. Lu, B. Peng, J. Gao, S.-C. Zhu.<br>AAAI 2022. <a href="https://arxiv.org/abs/2112.06346" class="pub-link">[pdf]</a> <a href="https://ojs.aaai.org/index.php/AAAI/article/view/21368" class="pub-link">[paper]</a> <a href="https://liang-qiu.github.io/ValueNet/" class="pub-link">[web]</a></li>
+    
+    <li><strong>Learning from the Tangram to Solve Mini Visual Tasks</strong><br>Y. Zhao, L. Qiu, P. Lu, F. Shi, T. Han, S.-C. Zhu.<br>AAAI 2022. <a href="https://arxiv.org/abs/2112.06113" class="pub-link">[pdf]</a> <a href="https://ojs.aaai.org/index.php/AAAI/article/view/20260" class="pub-link">[paper]</a> <a href="https://github.com/yizhouzhao/Tangram" class="pub-link">[data]</a></li>
+    
+    <li><strong>IconQA: A New Benchmark for Abstract Diagram Understanding and Visual Language Reasoning</strong><br>P. Lu, L. Qiu, J. Chen, T. Xia, Y. Zhao, W. Zhang, Z. Yu, X. Liang, S.-C. Zhu.<br>NeurIPS 2021, Datasets and Benchmarks Track. <a href="https://openreview.net/pdf?id=uXa9oBDZ9V1" class="pub-link">[pdf]</a> <a href="https://github.com/lupantech/IconQA" class="pub-link">[code]</a> <a href="https://iconqa.github.io/" class="pub-link">[web]</a></li>
+    
+    <li><strong>SocAoG: Incremental Graph Parsing for Social Relation Inference in Dialogues</strong><br>L. Qiu, Y. Liang, Y. Zhao, P. Lu, B. Peng, Z. Yu, Y.N. Wu, S.-C. Zhu.<br>ACL-IJCNLP 2021. <a href="https://arxiv.org/abs/2106.01006" class="pub-link">[pdf]</a> <a href="https://aclanthology.org/2021.acl-long.54/" class="pub-link">[paper]</a></li>
+    
+    <li><strong>Inter-GPS: Interpretable Geometry Problem Solving with Formal Language and Symbolic Reasoning</strong><br>P. Lu, R. Gong, S. Jiang, L. Qiu, S. Huang, X. Liang, S.-C. Zhu.<br>ACL-IJCNLP 2021. <a href="https://arxiv.org/abs/2105.04165" class="pub-link">[pdf]</a> <a href="https://github.com/lupantech/InterGPS" class="pub-link">[code]</a> <a href="https://lupantech.github.io/inter-gps/" class="pub-link">[web]</a></li>
+        
+    <li><strong>Structured Attention for Unsupervised Dialogue Structure Induction</strong><br>L. Qiu, Y. Zhao, W. Shi, Y. Liang, F. Shi, T. Yuan, Z. Yu, S.-C. Zhu.<br>EMNLP 2020. <a href="https://arxiv.org/abs/2009.08552" class="pub-link">[pdf]</a> <a href="https://aclanthology.org/2020.emnlp-main.148/" class="pub-link">[paper]</a> <a href="https://github.com/Liang-Qiu/SVRNN-dialogues" class="pub-link">[code]</a></li>
+    
+  </ul>
+</section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Feel free to reach out: liangqiu at outlook dot com</p>
+    </section>
+  </div>
+</div>
+{{ end }}

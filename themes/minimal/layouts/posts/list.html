@@ -1,0 +1,18 @@
+{{ define "main" }}
+<h1>All {{ len .Site.RegularPages }} archived posts</h1>
+
+<ul class="post-list">
+  {{ range .Site.RegularPages }}
+  <li>
+    <span class="date">{{ .Date.Format "Jan 2, 2006" }}</span>
+    <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+  </li>
+  {{ end }}
+</ul>
+
+<hr>
+
+<h2>A Note About The Archive</h2>
+
+<p>The blogs or notes more precisely in this archive are mainly for self-reading and English writing practice.</p>
+{{ end }}
