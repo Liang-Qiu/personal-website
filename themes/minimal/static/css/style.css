@@ -154,6 +154,38 @@ section {
   text-decoration: underline;
 }
 
+/* Scholar note */
+.scholar-note {
+  margin-top: 1.5rem;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+/* Post list (archive page) */
+.post-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.post-list li {
+  margin-bottom: 0.75rem;
+}
+
+.post-list .date {
+  color: #666;
+  font-size: 0.9rem;
+  margin-right: 1rem;
+}
+
+/* Article date */
+.article-date {
+  display: block;
+  margin-top: 2rem;
+  color: #666;
+  text-align: right;
+}
+
 /* Footer */
 footer {
   margin-top: 3rem;
